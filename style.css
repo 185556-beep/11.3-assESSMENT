@@ -1,0 +1,171 @@
+/* Style for index page. */
+/* Grid for index. */
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .2fr .4fr 2fr .1fr;
+    grid-template-areas: 
+    "log but"
+    "ban ban"
+    "images text"
+    "foot foot";
+    min-height: 97vh;
+    background-color: black;
+}
+
+
+
+.buttons{
+    grid-area: but;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    
+}
+
+.Logo{
+    grid-area: log;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Style for text in index page. */
+.texts{
+    grid-area: text;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.image{
+    grid-area: images;
+    background-color: rgb(255, 255, 255);
+}
+
+.banner{
+    grid-area: ban;
+}
+
+.footer{
+    grid-area: foot;
+}
+
+a {
+    color:black;
+    margin-right: 100px;
+    font-size: 40px;
+    float: right;
+    margin-top: 20px;
+}
+
+
+/* Style for How-to page */
+.container2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .2fr .4fr 2fr .1fr;
+    grid-template-areas: 
+    "log but"
+    "ban ban"
+    "images text"
+    "foot foot";
+    min-height: 97vh;
+}
+
+
+
+
+/* End of styling for How-to page */
+
+
+/* Style for quiz page */
+/* Grid for quiz page */
+
+.container3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .2fr 2fr ;
+    grid-template-areas: 
+    "log but"
+    "quisz quisz";
+    min-height: 97vh;
+    background-color: rgb(247, 246, 246);
+}
+
+.quiz{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: quisz;
+    background-color: rgb(0, 0, 0);
+}
+
+.quiz-container{
+    width: 500px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(231, 229, 229);
+    animation: fadeIn 0.5s ease-in-out;
+    background-color: rgb(240, 237, 237);
+}
+
+.quiz-container h1{
+    text-align: center;
+}
+
+.quiz-title{
+    text-align: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Question */
+.question-container{
+    margin-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.question{
+    margin-bottom: 10px;
+}
+
+
+/* Option button styling */
+.options {
+    list-style: none;
+    padding: 0;
+}
+
+.option {
+    margin: 10px 0;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    background-color: rgb(247, 248, 248);
+}
+
+.option.selected {
+    background-color: black;
+    color: white;
+}
+
+
+
+/* Submit button styling */
+.submits {
+    width: 100%;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 10px;
+}
+
+.submits :hover {
+    background-color: black;
+    color: rgb(241, 239, 239);
+}
+
+/* End of quiz style */
